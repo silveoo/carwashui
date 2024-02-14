@@ -2,7 +2,6 @@
     <qresource prefix="/pic">
         <file>image/mainCarimg.jpg</file>
         <file>image/icon.png</file>
-        <file>image/Без-имени-1.png</file>
         <file>image/2.png</file>
         <file>image/33.png</file>
     </qresource>
