@@ -5,4 +5,5 @@
         <file>image/2.png</file>
         <file>image/33.png</file>
     </qresource>
+    <qresource prefix="/image"/>
 </RCC>

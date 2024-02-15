@@ -38,6 +38,12 @@ private slots:
 
     void on_pushButton_6_clicked();
 
+    void hideCheck();
+
+    void on_pageBackButton_clicked();
+
+    void on_pushButton_3_clicked();
+
 protected:
 
     void keyPressEvent(QKeyEvent *event) override;

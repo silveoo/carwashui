@@ -12,6 +12,8 @@ CarwashUI::CarwashUI(QWidget *parent) :
 {
     ui->setupUi(this);
     on_lineEdit_search_textEdited("");
+    ui->stackedWidget->setCurrentWidget(0);
+    ui->pageBackButton->hide();
 }
 
 CarwashUI::~CarwashUI()
@@ -140,9 +142,6 @@ void CarwashUI::switchPage()
     ui->lineEdit_clphn->setValidator(phoneVal);
     QString name = ui->lineEdit_clname->text();
     QString surname = ui->lineEdit_clsurname->text();
-    QString brand = ui->lineEdit_carBrand->text();
-    QString color = ui->lineEdit_carColor->text();
-    QString plate = ui->lineEdit_carPlate->text();
     int zero = 0;
     QValidator::State nameState = nameVal->validate(name, zero);
     QValidator::State surnameState = nameVal->validate(surname, zero);
@@ -164,6 +163,7 @@ void CarwashUI::switchPage()
             else QMessageBox::warning(0, "Ошибка!", "Поля бренда и номера не могут быть пустыми!");
         }
         ui->stackedWidget_2->setCurrentIndex(currentIndex);
+        hideCheck(); //прячет кнопку назад если индекс меньше 1 и больше 6
     }
     else
     {
@@ -172,6 +172,32 @@ void CarwashUI::switchPage()
                                             background-color: rgb(80, 80, 80); border-color: rgb(255, 0, 0);}");
 
     }
+}
+
+void CarwashUI::hideCheck()
+{
+    int currentIndex = ui->stackedWidget_2->currentIndex();
+    if(currentIndex >= 1 && currentIndex <= 6)
+    {
+        ui->pageBackButton->show();
+    }
+    else ui->pageBackButton->hide();
+}
+
+void CarwashUI::on_pageBackButton_clicked()
+{
+    int currentIndex = ui->stackedWidget_2->currentIndex();
+    currentIndex--;
+    ui->stackedWidget_2->setCurrentIndex(currentIndex);
+    hideCheck(); //прячет кнопку назад если индекс меньше 1 и больше 6
+}
+
+void CarwashUI::on_pushButton_3_clicked()
+{
+    int currentIndex = ui->stackedWidget_2->currentIndex();
+    currentIndex--;
+    ui->stackedWidget_2->setCurrentIndex(currentIndex);
+    hideCheck(); //прячет кнопку назад если индекс меньше 1 и больше 6
 }
 
 void CarwashUI::keyPressEvent(QKeyEvent *event)

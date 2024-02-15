@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1500</width>
+    <width>1241</width>
     <height>700</height>
    </rect>
   </property>
@@ -466,7 +466,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="page">
      <widget class="QWidget" name="formLayoutWidget">
@@ -474,7 +474,7 @@
        <rect>
         <x>10</x>
         <y>0</y>
-        <width>1371</width>
+        <width>1121</width>
         <height>111</height>
        </rect>
       </property>
@@ -569,7 +569,7 @@ background-color: rgb(80, 80, 80);</string>
        <rect>
         <x>10</x>
         <y>110</y>
-        <width>1377</width>
+        <width>1121</width>
         <height>551</height>
        </rect>
       </property>
@@ -1088,9 +1088,9 @@ color: rgb(255, 255, 255);</string>
      <widget class="QStackedWidget" name="stackedWidget_2">
       <property name="geometry">
        <rect>
-        <x>210</x>
-        <y>90</y>
-        <width>901</width>
+        <x>160</x>
+        <y>140</y>
+        <width>891</width>
         <height>331</height>
        </rect>
       </property>
@@ -1813,7 +1813,7 @@ color: rgb(255, 255, 255);</string>
         <widget class="QPushButton" name="pushButton_2">
          <property name="geometry">
           <rect>
-           <x>380</x>
+           <x>440</x>
            <y>250</y>
            <width>83</width>
            <height>29</height>
@@ -1824,11 +1824,45 @@ color: rgb(255, 255, 255);</string>
 background-color: rgb(80, 80, 80);</string>
          </property>
          <property name="text">
-          <string>Отмена</string>
+          <string>Сброс</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_3">
+         <property name="geometry">
+          <rect>
+           <x>310</x>
+           <y>250</y>
+           <width>83</width>
+           <height>29</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(80, 80, 80);</string>
+         </property>
+         <property name="text">
+          <string>Назад</string>
          </property>
         </widget>
        </widget>
       </widget>
+     </widget>
+     <widget class="QPushButton" name="pageBackButton">
+      <property name="geometry">
+       <rect>
+        <x>139</x>
+        <y>307</y>
+        <width>80</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(80, 80, 80);</string>
+      </property>
+      <property name="text">
+       <string>Назад</string>
+      </property>
      </widget>
     </widget>
     <widget class="QWidget" name="page_11">
@@ -1985,8 +2019,8 @@ background-color: rgb(80, 80, 80);</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1500</width>
-     <height>25</height>
+     <width>1241</width>
+     <height>21</height>
     </rect>
    </property>
   </widget>
