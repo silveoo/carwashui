@@ -259,8 +259,7 @@ void CarwashUI::addData()
     QString carColor = ui->lineEdit_carColor->text();
     QString carPlate = ui->lineEdit_carPlate->text();
 
-    //ПОЛУЧЕНИЕ ID КЛИЕНТА
-    QSqlQuery query;
+    QSqlQuery query; //ПОЛУЧЕНИЕ ID КЛИЕНТА
     QString clientId;
     query.prepare("SELECT client_id FROM Client WHERE name = :name AND surname = :surname AND client_phone = :phone;");
     query.bindValue(":name", name);
@@ -290,8 +289,7 @@ void CarwashUI::addData()
         clientId = clientCheckAgain.value(0).toString();
     }
 
-    //ПОЛУЧЕНИЕ ID МАШИНЫ
-    QSqlQuery getVehicleId;
+    QSqlQuery getVehicleId; //ПОЛУЧЕНИЕ ID МАШИНЫ
     QString vehicleId;
     getVehicleId.prepare("SELECT vehicle_id FROM Vehicle WHERE plate = :plate;");
     getVehicleId.bindValue(":plate", carPlate);
@@ -317,8 +315,7 @@ void CarwashUI::addData()
         vehicleId = vehicleCheckAgain.value(0).toString();
     }
 
-    //ПОЛУЧЕНИЕ ID ПЛАТЕЖА
-    QSqlQuery getPaymentId;
+    QSqlQuery getPaymentId; //ПОЛУЧЕНИЕ ID ПЛАТЕЖА
     QString paymentId;
     QString arr[] = {"Наличные", "Банковская карта"};
     QString payMethod = arr[rand() % 2];
@@ -327,19 +324,17 @@ void CarwashUI::addData()
     insertPayment.bindValue(":id", paymentId);
     insertPayment.bindValue(":method", payMethod);
     insertPayment.exec();
-    getPaymentId.prepare("SELECT getpaymentid();"); //функция
+    getPaymentId.prepare("SELECT getpaymentid();");
     getPaymentId.exec();
     getPaymentId.next();
     paymentId = getPaymentId.value(0).toString();
 
-    //ПОЛУЧЕНИЕ ID МОЙЩИКА И ТИПА МОЙКИ
-    QString arrWash[] = {"1", "2", "3"};
+    QString arrWash[] = {"1", "2", "3"}; //ПОЛУЧЕНИЕ ID МОЙЩИКА И ТИПА МОЙКИ
     QString washType = arrWash[rand() % 3];
     QString arrWasher[] = {"1", "2"};
     QString washer = arrWasher[rand() % 2];
 
-    //ИНСЕРТ ОРДЕРС
-    QString date;
+    QString date; //ИНСЕРТ ОРДЕРС
     QSqlQuery getDate;
     getDate.prepare("SELECT CURDATE();");
     getDate.exec();
@@ -370,7 +365,7 @@ void CarwashUI::addData()
     ui->lineEdit_carPlate->clear();
 }
 
-void CarwashUI::on_pushButton_2_clicked() //ОТМЕНА
+void CarwashUI::on_pushButton_2_clicked() //СБРОС
 {
     qDebug() << "Отмена";
     ui->stackedWidget_2->setCurrentIndex(0);

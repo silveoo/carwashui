@@ -4,6 +4,7 @@
         <file>image/icon.png</file>
         <file>image/2.png</file>
         <file>image/33.png</file>
+        <file>image/arrowBack.png</file>
     </qresource>
     <qresource prefix="/image"/>
 </RCC>

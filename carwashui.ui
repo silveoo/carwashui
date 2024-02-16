@@ -460,22 +460,22 @@
     <property name="geometry">
      <rect>
       <x>100</x>
-      <y>10</y>
-      <width>1441</width>
-      <height>661</height>
+      <y>0</y>
+      <width>1141</width>
+      <height>681</height>
      </rect>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="page">
      <widget class="QWidget" name="formLayoutWidget">
       <property name="geometry">
        <rect>
         <x>10</x>
-        <y>0</y>
+        <y>10</y>
         <width>1121</width>
-        <height>111</height>
+        <height>101</height>
        </rect>
       </property>
       <layout class="QFormLayout" name="formLayout">
@@ -570,7 +570,7 @@ background-color: rgb(80, 80, 80);</string>
         <x>10</x>
         <y>110</y>
         <width>1121</width>
-        <height>551</height>
+        <height>561</height>
        </rect>
       </property>
       <property name="palette">
@@ -1150,6 +1150,33 @@ background-color: rgb(80, 80, 80);</string>
         <property name="maxLength">
          <number>30</number>
         </property>
+       </widget>
+       <widget class="QWidget" name="horizontalLayoutWidget_3">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>250</y>
+          <width>891</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <item>
+          <widget class="QLabel" name="label_17">
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Нажмите Enter, чтобы перейти дальше</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+        </layout>
        </widget>
       </widget>
       <widget class="QWidget" name="page_4">
@@ -1922,13 +1949,57 @@ background-color: rgb(80, 80, 80);</string>
         <height>71</height>
        </rect>
       </property>
+      <property name="font">
+       <font>
+        <pointsize>28</pointsize>
+       </font>
+      </property>
       <property name="styleSheet">
        <string notr="true">color: rgb(255, 255, 255);
+border-radius: 8px;
 background-color: rgb(80, 80, 80);</string>
       </property>
       <property name="text">
-       <string>Назад</string>
+       <string/>
       </property>
+      <property name="icon">
+       <iconset resource="carImage.qrc">
+        <normaloff>:/pic/image/arrowBack.png</normaloff>:/pic/image/arrowBack.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>80</width>
+        <height>80</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QWidget" name="horizontalLayoutWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>10</y>
+        <width>1141</width>
+        <height>80</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QLabel" name="label_16">
+         <property name="font">
+          <font>
+           <pointsize>36</pointsize>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Добавление</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
      </widget>
     </widget>
     <widget class="QWidget" name="page_11">
@@ -2091,6 +2162,8 @@ background-color: rgb(80, 80, 80);</string>
    </property>
   </widget>
  </widget>
- <resources/>
+ <resources>
+  <include location="carImage.qrc"/>
+ </resources>
  <connections/>
 </ui>
