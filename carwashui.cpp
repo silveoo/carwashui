@@ -15,6 +15,7 @@ CarwashUI::CarwashUI(QWidget *parent) :
     ui->stackedWidget->setCurrentWidget(0);
     ui->pageBackButton->hide();
     ui->tableView->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
+    ui->tableAdding->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
 }
 
 CarwashUI::~CarwashUI()
