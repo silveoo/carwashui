@@ -233,6 +233,7 @@ void CarwashUI::addingTable()
     QString carColor = ui->lineEdit_carColor->text();
     QString carPlate = ui->lineEdit_carPlate->text();
     QStringList headers = {"Имя", "Фамилия", "Телефон", "Карта", "Бренд", "Цвет", "Номера"};
+
     ui->tableAdding->setColumnCount(7);
     ui->tableAdding->setRowCount(1);
     ui->tableAdding->setShowGrid(true);

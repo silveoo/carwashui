@@ -1096,8 +1096,8 @@ QScrollBar::vertical {
      <widget class="QStackedWidget" name="stackedWidget_2">
       <property name="geometry">
        <rect>
-        <x>160</x>
-        <y>140</y>
+        <x>120</x>
+        <y>160</y>
         <width>891</width>
         <height>331</height>
        </rect>
@@ -1916,8 +1916,8 @@ background-color: rgb(80, 80, 80);</string>
      <widget class="QPushButton" name="pageBackButton">
       <property name="geometry">
        <rect>
-        <x>139</x>
-        <y>307</y>
+        <x>101</x>
+        <y>327</y>
         <width>80</width>
         <height>71</height>
        </rect>
