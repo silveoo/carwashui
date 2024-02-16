@@ -48,10 +48,19 @@ void CarwashUI::on_pushButton_6_clicked() //РАЗДЕЛ СПРАВКА
     ui->pushButton_4->setStyleSheet("background-color: rgb(80, 80, 80); color: white");
 }
 
-
 void CarwashUI::on_pushButton_5_clicked() //ВЫХОД
 {
     QApplication::quit();
+}
+
+void CarwashUI::on_pushButton_5_pressed() //ПОКРАСКА ВЫХОДА
+{
+    ui->pushButton_5->setStyleSheet("background-color: darkRed; color: white");
+}
+
+void CarwashUI::on_pushButton_5_released() //ПОКРАСКА ВЫХОДА ОБРАТНО
+{
+    ui->pushButton_5->setStyleSheet("background-color: rgb(80, 80, 80); color: white");
 }
 
 
@@ -347,7 +356,8 @@ void CarwashUI::addData()
     insertOrderQ.bindValue(":date", date);
     insertOrderQ.exec();
 
-    qDebug() << "ДОБАВЛЕНИЕ" << clientId << "c " << vehicleId << "v " << paymentId << "p " << washer << "w " << washType << "wT " << date << "d ";
+    qDebug() << "ДОБАВЛЕНИЕ" << clientId << "clientid " << vehicleId << "vehcileid " << paymentId <<
+             "paymentid " << washer << "washer " << washType << "wT " << date << "d ";
 
     ui->lineEdit_clname->clear();
     ui->lineEdit_clsurname->clear();

@@ -42,7 +42,7 @@ void MainWindow::on_pushButton_clicked() //КНОПКА АВТОРИЗАЦИЯ
       }
       else
       {                                 //ВЫВОДИТСЯ ОШИБКА НЕТ СОЕДИНЕНИЯ
-          QMessageBox::warning(this, "Carwash", "No connection to database");
+          QMessageBox::warning(this, "Carwash", "Нет соединения с базой  данных!");
           qDebug() << "mainWindow No connection to database";
       }
 

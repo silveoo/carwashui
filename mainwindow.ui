@@ -7,13 +7,13 @@
     <x>0</x>
     <y>0</y>
     <width>630</width>
-    <height>300</height>
+    <height>285</height>
    </rect>
   </property>
   <property name="minimumSize">
    <size>
     <width>630</width>
-    <height>300</height>
+    <height>285</height>
    </size>
   </property>
   <property name="maximumSize">
@@ -1466,16 +1466,6 @@ border-color: rgb(135, 135, 135);</string>
      </item>
     </layout>
    </widget>
-  </widget>
-  <widget class="QMenuBar" name="menubar">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>630</width>
-     <height>21</height>
-    </rect>
-   </property>
   </widget>
  </widget>
  <resources>

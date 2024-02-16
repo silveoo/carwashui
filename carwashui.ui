@@ -1460,7 +1460,7 @@ background-color: rgb(80, 80, 80);</string>
        <widget class="QFrame" name="frame">
         <property name="geometry">
          <rect>
-          <x>40</x>
+          <x>20</x>
           <y>10</y>
           <width>831</width>
           <height>311</height>
@@ -1478,30 +1478,12 @@ border: 2px;</string>
         <property name="frameShadow">
          <enum>QFrame::Raised</enum>
         </property>
-        <widget class="QLabel" name="label_10">
-         <property name="geometry">
-          <rect>
-           <x>300</x>
-           <y>30</y>
-           <width>281</width>
-           <height>71</height>
-          </rect>
-         </property>
-         <property name="font">
-          <font>
-           <pointsize>22</pointsize>
-          </font>
-         </property>
-         <property name="text">
-          <string>Подтверждение</string>
-         </property>
-        </widget>
         <widget class="QTableWidget" name="tableAdding">
          <property name="geometry">
           <rect>
-           <x>30</x>
+           <x>10</x>
            <y>130</y>
-           <width>771</width>
+           <width>811</width>
            <height>91</height>
           </rect>
          </property>
@@ -1802,55 +1784,131 @@ color: rgb(255, 255, 255);</string>
           <bool>false</bool>
          </attribute>
         </widget>
-        <widget class="QLabel" name="label_11">
+        <widget class="QWidget" name="horizontalLayoutWidget">
          <property name="geometry">
           <rect>
-           <x>210</x>
-           <y>100</y>
-           <width>401</width>
-           <height>20</height>
+           <x>0</x>
+           <y>220</y>
+           <width>831</width>
+           <height>71</height>
           </rect>
          </property>
-         <property name="text">
-          <string>Нажмите Enter, чтобы добавить данные в базу</string>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignCenter</set>
-         </property>
-        </widget>
-        <widget class="QPushButton" name="pushButton_2">
-         <property name="geometry">
-          <rect>
-           <x>440</x>
-           <y>250</y>
-           <width>83</width>
-           <height>29</height>
-          </rect>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">color: rgb(255, 255, 255);
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <spacer name="horizontalSpacer">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::Fixed</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>180</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_3">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>25</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(255, 255, 255);
 background-color: rgb(80, 80, 80);</string>
-         </property>
-         <property name="text">
-          <string>Сброс</string>
-         </property>
+            </property>
+            <property name="text">
+             <string>Назад</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_2">
+            <property name="minimumSize">
+             <size>
+              <width>20</width>
+              <height>25</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(80, 80, 80);</string>
+            </property>
+            <property name="text">
+             <string>Сброс</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_2">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::Fixed</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>180</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
         </widget>
-        <widget class="QPushButton" name="pushButton_3">
+        <widget class="QWidget" name="verticalLayoutWidget">
          <property name="geometry">
           <rect>
-           <x>310</x>
-           <y>250</y>
-           <width>83</width>
-           <height>29</height>
+           <x>0</x>
+           <y>40</y>
+           <width>831</width>
+           <height>80</height>
           </rect>
          </property>
-         <property name="styleSheet">
-          <string notr="true">color: rgb(255, 255, 255);
-background-color: rgb(80, 80, 80);</string>
-         </property>
-         <property name="text">
-          <string>Назад</string>
-         </property>
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <item>
+           <widget class="QLabel" name="label_10">
+            <property name="font">
+             <font>
+              <pointsize>22</pointsize>
+             </font>
+            </property>
+            <property name="layoutDirection">
+             <enum>Qt::LeftToRight</enum>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::NoFrame</enum>
+            </property>
+            <property name="text">
+             <string>Подтверждение</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_11">
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Нажмите Enter, чтобы добавить данные в базу</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+         </layout>
         </widget>
        </widget>
       </widget>
@@ -1944,7 +2002,7 @@ background-color: rgb(80, 80, 80);</string>
     </property>
     <property name="styleSheet">
      <string notr="true">color: rgb(255, 255, 255);
-background-color: rgb(0, 85, 0);
+background-color: darkGreen;
 
 </string>
     </property>
