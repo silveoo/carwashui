@@ -7,9 +7,11 @@
 ![image](https://github.com/silveoo/carwashui/assets/92054590/63b47a12-9a04-439f-8b73-cb49909b190c)
 
 Добавление заказа реализовано с помощью stackedwidget. Нажатие enter переключает на следующую страницу.
-![image](https://github.com/silveoo/carwashui/assets/92054590/17559bda-186b-4d77-8e19-d7e9a7ba35eb)
+![image](https://github.com/silveoo/carwashui/assets/92054590/2a96ac58-dad2-48d9-a474-5128bd8148f2)
+
 Можно также вернуться на предыдущую страницу с помощью кнопки назад.
 ![image](https://github.com/silveoo/carwashui/assets/92054590/b3895f7c-5e72-4a34-bb71-e23397a4e4b1)
+
 Последний виджет - подтверждение данных, после чего заказ добавляется в базу данных.
 ![image](https://github.com/silveoo/carwashui/assets/92054590/1263de24-05b7-4de4-910f-273bf26fd7c3)
 
