@@ -15,6 +15,9 @@
 Последний виджет - подтверждение данных, после чего заказ добавляется в базу данных.
 ![image](https://github.com/silveoo/carwashui/assets/92054590/ec49ad0d-659c-4062-a25e-3e9c297ce0d6)
 
+База данных
+![image](https://github.com/silveoo/carwashui/assets/92054590/23d66405-7a3f-4fab-8b93-28b239292196)
+
 
 
 
